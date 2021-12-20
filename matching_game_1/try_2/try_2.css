@@ -1,0 +1,92 @@
+.matching-memory-Game {
+    width:80%;
+    margin:0 auto;
+    font-family:'Permanent Marker', cursive;
+}
+.game-container {
+    width:fit-content; height:fit-content;
+    background-color: rgb(221, 210, 197);
+    padding:0.5rem;
+    border-radius: 5px;
+}
+.card {
+    background-color: rgb(236, 233, 229);
+    margin:15px;
+    border-radius:5px;
+    box-shadow: 3px 3px 7px 1px rgb(184, 183, 180);
+    cursor: pointer;
+}
+.card:hover {
+    background-color: rgb(221, 210, 197);
+    box-shadow: 1px 1px 9px 0 rgb(236, 233, 229);
+}
+.card-clicked {
+    background-color: rgb(221, 210, 197);
+    margin:15px;
+    border-radius:5px;
+    box-shadow: 0px 0px 9px 0 rgb(184, 183, 180);
+    /* cursor: pointer; */
+}
+.disable-clicks {
+    pointer-events: none;/** Disables Clicking*/
+    cursor:default;
+}
+.enable-clicks {
+    cursor: pointer;
+    pointer-events: all; /** enables Clicking */ 
+}
+.toggle-image {
+    width:70px; height:70px;  
+    margin:10px;
+    border-radius:5px;  
+    visibility: hidden;
+}
+.show-image {
+    visibility:visible;
+}
+.hide-image {
+    visibility:hidden;
+}
+/* Start Button */
+.start-btn {
+    padding:15px;
+    font-size: large;
+    background-color: rgb(93, 162, 219);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 9px 0 #b9c875;
+}
+.start-btn:hover {
+    background-color: rgb(121, 190, 74);
+    box-shadow: 0 0 9px 0 #96b1e4;
+}
+.started-indicate {
+    background-color: rgb(169, 228, 169);
+    width:650px; height:60px;
+    border-radius: 6px;
+    padding:10px 0 0 15px;
+}
+/* Stop Button */
+.stop-btn {
+    padding:15px;
+    font-size: large;
+    background-color: rgb(117, 87, 59);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 9px 0 #a7735c;
+}
+.stop-btn:hover {
+    background-color: rgb(185, 36, 17);
+    box-shadow: 0 0 9px 0 #96b1e4;
+}
+.stopped-indicate {
+    background-color: rgb(223, 172, 149);
+    width:650px; height:60px;
+    border-radius: 6px;
+    padding:10px 0 0 15px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}

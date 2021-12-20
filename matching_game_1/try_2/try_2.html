@@ -1,0 +1,48 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Try 2 Matching Cards </title>
+            <link rel="stylesheet" href="try_2.css" />
+            <script src="try_2.js"></script>
+        </head>
+        <body>
+            <div class="matching-memory-Game">
+                
+                <button class="start-btn" onclick="clickedFunction()"> Start Game </button>
+                <button class="stop-btn" onclick="againclickedFunction()"> Stop Game </button>
+                <button class="reset-btn" onclick="resetclickedFunction()"> Reset Game </button>
+
+                <h1 id="demo"> Let's match some shapes </h1>
+                <div class="game-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="card" id="card-1" ondblclick="hideCard1()" onclick="displayCard1()"><img id="t-1" class="toggle-image"  src="../images/Aa.png" alt="img1"></td>
+                                <td class="card" id="card-2" ondblclick="hideCard2()" onclick="displayCard2()"><img id="t-2" class="toggle-image" src="../images/circle_1.png" alt="img2"></td>
+                                <td class="card" id="card-3" ondblclick="hideCard3()" onclick="displayCard3()"><img id="t-3" class="toggle-image" src="../images/vecter_2.png" alt="img1"></td>
+                                <td class="card" id="card-4" ondblclick="hideCard4()" onclick="displayCard4()"><img id="t-4" class="toggle-image" src="../images/circle_6.png" alt="img4"></td>
+                            </tr>
+                            <tr>
+                                <td class="card" id="card-5" ondblclick="hideCard5()" onclick="displayCard5()"><img id="t-5" class="toggle-image " src="../images/circle_1.png" alt="img2"></td>
+                                <td class="card" id="card-6" ondblclick="hideCard6()" onclick="displayCard6()"><img id="t-6" class="toggle-image " src="../images/vector_1.jpg" alt="img2"></td>
+                                <td class="card" id="card-7" ondblclick="hideCard7()" onclick="displayCard7()"><img id="t-7" class="toggle-image " src="../images/Aa.png" alt="img1"></td>
+                                <td class="card" id="card-8" ondblclick="hideCard8()" onclick="displayCard8()"><img id="t-8" class="toggle-image" src="../images/circle_6.png" alt="img4"></td>
+                            </tr>
+                            <tr>
+                                <td class="card" id="card-9" ondblclick="hideCard9()" onclick="displayCard9()" ><img id="t-9" class="toggle-image" src="../images/circle_5.png" alt="img2"></td>
+                                <td class="card" id="card-10" ondblclick="hideCard10()" onclick="displayCard10()" ><img id="t-10" class="toggle-image" src="../images/circle_3.png" alt="img3"></td>
+                                <td class="card" id="card-11" ondblclick="hideCard11()" onclick="displayCard11()" ><img id="t-11" class="toggle-image" src="../images/vecter_2.png" alt="img1"></td>
+                                <td class="card" id="card-12" ondblclick="hideCard12()" onclick="displayCard12()" ><img id="t-12" class="toggle-image" src="../images/vector_1.jpg" alt="img3"></td>
+                            </tr>
+                            <tr>
+                                <td class="card" id="card-13" ondblclick="hideCard13()" onclick="displayCard13()"><img id="t-13" class="toggle-image" src="../images/triangle_1.jpg" alt="img1"></td>
+                                <td class="card" id="card-14" ondblclick="hideCard14()" onclick="displayCard14()"><img id="t-14" class="toggle-image" src="../images/circle_3.png" alt="img1"></td>
+                                <td class="card" id="card-15" ondblclick="hideCard15()" onclick="displayCard15()"><img id="t-15" class="toggle-image" src="../images/circle_5.png" alt="img1"></td>
+                                <td class="card" id="card-16" ondblclick="hideCard16()" onclick="displayCard16()"><img id="t-16" class="toggle-image" src="../images/triangle_1.jpg" alt="img1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </body>
+    </html>
