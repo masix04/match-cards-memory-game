@@ -345,7 +345,7 @@
 // };
 
 var date = new Date();
-function clickedFunction() {
+function startclickedFunction() {
     document.getElementById('demo').classList.remove('stopped-indicate');
     document.getElementById('demo').classList.add('started-indicate');
     document.getElementById('demo').innerHTML = 'Game has been started at ( '+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds()+' ).';
@@ -366,4 +366,32 @@ function resetclickedFunction() {
     document.getElementById('demo').innerHTML = "Let's match some shapes";
         /** Reset whole games => FUTURE Addition record tme of previous Game played  */
     this.resetcards();
+}
+var defaultHTML='';
+window.onload = function(e) {
+    var applyOnDiv = document.getElementById('game-container');
+    this.defaultHTML = applyOnDiv.innerHTML;
+    console.log(this.defaultHTML);
+}
+/** LIKE Scripting In JavaScript */
+function update_grid(peremeter) {
+    $filename = peremeter+'x'+peremeter+'_cards.html';
+    // console.log($filename);
+    var applyOnDiv = document.getElementById('game-container');
+    // const defaultHTML = applyOnDiv.innerHTML;
+    // console.log(applyOnDiv.innerHTML);
+    if(peremeter==2) {
+        applyOnDiv.innerHTML = this.defaultHTML;
+    } else {
+        var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        xhr.open('get', $filename, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) { 
+                applyOnDiv.innerHTML = xhr.responseText;
+            } 
+        }
+        xhr.send();
+        // applyOnDiv.load($filename);
+    }
+    // applyOnDiv.innerHTML = '00:00:00-00-00-00';
 }

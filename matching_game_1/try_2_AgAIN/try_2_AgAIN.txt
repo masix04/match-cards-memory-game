@@ -1,0 +1,21 @@
+
+
+- Work is with Functions BUT if images are 4 then Functons are also 4,
+AND GetElement By Id so, 4 ids and 4 functions to hanadle.
+
+
+Added single click to show Image
+Added double click to hide Image
+
+1- Trying to add -> After 2nd image opened, All images will be hide.
+
+
+____Used___,
+----------- 
+onclick
+ondblclick
+Date()
+classList.add()
+classList.remove()
+document.getElementById('')
+innerHTML = '';

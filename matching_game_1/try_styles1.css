@@ -1,0 +1,62 @@
+.body-container{
+    width:80%;
+    margin:0 auto;
+    /* background-color: #ecbb8c; */
+}
+body {
+    flex-direction: column; /** Not effect*/
+	font-family: 'Permanent Marker', cursive;
+}
+.game-container {
+    display: flex; /** Shows in row */
+    justify-content: center;
+    flex-direction: column; /** Not effect*/
+
+}
+.deck:hover {
+    background-color: #0a0a0a;
+    box-shadow: 4px 4px 4px 0 rgb(121, 121, 128); /** not-know not-know right+bottom Top*/
+}
+.deck {
+    /* display:flex; */
+    width: 25%;
+    background: #d19818;
+    display: flex; /** Shows in row */
+    -webkit-display:flex;
+    flex-wrap: wrap; /* WRAPS all content*/
+    -webkit-flex-wrap:wrap; /* WRAPS all content */
+    align-items: center; 
+    padding: 0.5rem;
+    box-shadow: 4px 4px 4px 0 rgb(207, 164, 136); /** not-know not-know right+bottom Top*/
+    justify-content: space-around; /** Provides space arround inside content. */
+    border-radius: 4px;
+}
+.deck .card {
+    width:80px;
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: 4px 4px 4px 0 rgb(231, 236, 216);
+    border-radius: 5px; /** For Card */
+    background: url("background.png");
+    list-style-type: none; /* REMOVES Bullets from List*/
+    float:left; /* Making content to move left */
+    margin:5px;
+}
+.card:hover {
+    background-color: #0a0a0a;
+}
+.toggle-image {
+    width:80px;
+    border-radius: 5px; /** For Image */
+    /* background-image: url("background.png"); */
+    visibility: hidden;
+}
+.smile {
+    background-color:yellow;
+}
+/* .start-btn {
+    background-color: blue;
+    display:block;
+} */

@@ -1,0 +1,49 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Try 2 Matching Cards </title>
+            <link rel="stylesheet" href="try_2_AgAIN.css" />
+            <script src="try_2_AgAIN.js"></script>
+            <script src="try_2_AgAIN_StopWatch.js"></script>
+        </head>
+        <body>
+            <div class="game-header">  <h3> Memory Matching Game</h3></div>
+            <div class="matching-memory-Game">
+                
+                <button class="start-btn" onclick="startclickedFunction()"> Start Game </button>
+                <button class="stop-btn" onclick="stopclickedFunction()"> Stop Game </button>
+                <button class="reset-btn" onclick="resetclickedFunction()"> Reset Game </button>
+                <div id="time">
+                    00:00:00
+                </div>
+                <!--  DESIGN Your Board Game Yourself -->
+                <div id="update-grid">
+                    <h3> Update Cards Grid </h3>
+                    <button class="UpdateGrid" onclick="update_grid(2)">By Default</button>
+                    <button class="UpdateGrid" onclick="update_grid(3)">3x3</button>
+                    <button class="UpdateGrid" onclick="update_grid(4)">4x4</button>
+                    <button class="UpdateGrid" onclick="update_grid(5)">5x5</button>
+                    <button class="UpdateGrid" onclick="update_grid(6)">6x6</button>
+                    <button class="UpdateGrid" onclick="update_grid(7)">7x7</button>
+                    <button class="UpdateGrid" onclick="update_grid(8)">8x8</button>
+                    <button class="UpdateGrid" onclick="update_grid(9)">9x9</button>
+                    <button class="UpdateGrid" onclick="update_grid(10)">10x10</button>
+                </div>
+                <h1 id="demo"> Let's match some shapes </h1>
+                <div id='game-container' class="game-container">
+                    <table align=center>
+                        <tbody>
+                            <tr>
+                                <td class="card" id="card-1" onclick="displayCard1()"><img id="t-1" class="toggle-image"  src="../images/Aa.png" alt="img1"></td>
+                                <td class="card" id="card-2" onclick="displayCard2()"><img id="t-2" class="toggle-image" src="../images/circle_1.png" alt="img2"></td>
+                            </tr>
+                            <tr>
+                                <td class="card" id="card-3" onclick="displayCard3()"><img id="t-3" class="toggle-image" src="../images/vecter_2.png" alt="img1"></td>
+                                <td class="card" id="card-4" onclick="displayCard4()"><img id="t-4" class="toggle-image" src="../images/circle_6.png" alt="img4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </body>
+    </html>
