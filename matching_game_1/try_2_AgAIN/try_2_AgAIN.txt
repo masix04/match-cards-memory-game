@@ -13,9 +13,25 @@ Added double click to hide Image
 ____Used___,
 ----------- 
 onclick
-ondblclick
 Date()
 classList.add()
 classList.remove()
 document.getElementById('')
 innerHTML = '';
+
+----------------------------------
+/*      DATE- 30.12.2021     */
+----------------------------------
+/* <!-- tO oPEN a File & Change innerHTML as that File --> */
+var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+        xhr.open('get', $filename, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) { 
+                applyOnDiv.innerHTML = xhr.responseText;
+            } 
+        }
+        xhr.send();
+
+IMPROVEMENT - NOTES:
+___________   _____
+POINT: BETTER Change with OPTIONS - 'LESS Duplication Work'

@@ -1,0 +1,5 @@
+--------------------------
+31.12.2021   Friday
+--------------------------
+1- Updated a try_2_AgAIN.txt
+2- Added rotate animation on cards - still need fix

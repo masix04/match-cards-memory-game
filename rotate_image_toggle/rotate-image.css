@@ -1,0 +1,8 @@
+.add-anim {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.add-reverse-anim {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+}

@@ -1,17 +1,23 @@
 .game-header {
-    width:80%;
-    margin:0 auto 10px auto; padding:10px;
+    width:70%;
+    margin:0 auto 10px auto; padding:5px;
     font-family:'Permanent Marker', cursive;
     font-size: x-large;
     color:#c7b5a7;
     text-align: center;
-    background-color: rgb(129, 104, 14);
+    background-color: rgb(129, 104, 14); 
+    border-radius: 5px;
+}
+.border-div {
+    border: rgb(231, 229, 222) 1px solid; border-radius: 3px;
+    /* padding:2px; */
 }
 .matching-memory-Game {
-    width:80%;
-    margin:0 auto; padding:10px;
+    width:70%;
+    margin:0 auto; padding:5px;
     font-family:'Permanent Marker', cursive;
     background-color: rgb(231, 229, 222);
+    border-radius: 5px; border:1px solid rgb(129, 104, 14);
 }
 .game-container {
     width:fit-content; height:fit-content;
@@ -69,6 +75,9 @@
     margin:10px;
     border-radius:5px;  
     visibility: hidden;
+    overflow: hidden;
+    transition-duration: 2.1s;
+    transition-property: transform;
 }
 .show-image {
     visibility:visible;
@@ -134,4 +143,15 @@
     background-color: rgb(165, 161, 161);
     box-shadow: 0 0 9px 0 #eebc94;
     color:rgb(231, 225, 225);
+}
+
+/* Rotate Animation */
+
+.rotate-image {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+.rotate-reverse-image {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
 }

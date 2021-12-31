@@ -16,9 +16,11 @@
     /** Function define */
     function displayCard1() {
         if(document.getElementById('t-1').classList.contains('show-image')){
+            // document.getElementById('t-1').classList.add('rotate-image'); /** Rotate image when Selected */
             console.log('Already-clicked');
         }else{
             console.log('clicked');
+            document.getElementById('t-1').classList.add('rotate-image'); /** Rotate image when Selected */
             document.getElementById('t-1').classList.add('show-image'); /** Shows image when Selected */
             document.getElementById('card-1').classList.remove('card'); /** Removed Card class to stop hover when selected */
             document.getElementById('card-1').classList.add('card-clicked'); /** Clicked UI shows wen clicked. */
@@ -34,6 +36,7 @@
             console.log('Already-clicked');
         }else{
             console.log('clicked');
+            document.getElementById('t-2').classList.add('rotate-image'); /** Rotate image when Selected */
             document.getElementById('t-2').classList.add('show-image');
             document.getElementById('card-2').classList.remove('card');
             document.getElementById('card-2').classList.add('card-clicked');
@@ -49,6 +52,7 @@
             console.log('Already-clicked');
         }else{
             console.log('clicked');
+            document.getElementById('t-3').classList.add('rotate-image'); /** Rotate image when Selected */
             document.getElementById('t-3').classList.add('show-image');
             document.getElementById('card-3').classList.remove('card');
             document.getElementById('card-3').classList.add('card-clicked');
@@ -64,6 +68,7 @@
             console.log('Already-clicked');
         }else{
             console.log('clicked');
+            document.getElementById('t-4').classList.add('rotate-image'); /** Rotate image when Selected */
             document.getElementById('t-4').classList.add('show-image');
             document.getElementById('card-4').classList.remove('card');
             document.getElementById('card-4').classList.add('card-clicked');
@@ -74,192 +79,6 @@
         document.getElementById('t-4').classList.remove('show-image');
     }
     
-
-    /** 5 - 8 Functions */
-    function displayCard5() {
-        if(document.getElementById('t-5').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-5').classList.add('show-image');
-            document.getElementById('card-5').classList.remove('card');
-            document.getElementById('card-5').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-5').src);
-        }
-    }function hideCard5() {
-        document.getElementById('t-5').classList.remove('show-image');
-    }
-// 6
-    function displayCard6() {
-        if(document.getElementById('t-6').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-6').classList.add('show-image');
-            document.getElementById('card-6').classList.remove('card');
-            document.getElementById('card-6').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-6').src);
-        }
-    }function hideCard6() {
-        document.getElementById('t-6').classList.remove('show-image');
-    }
-// 7
-    function displayCard7() {
-        if(document.getElementById('t-7').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-7').classList.add('show-image');
-            document.getElementById('card-7').classList.remove('card');
-            document.getElementById('card-7').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-7').src);
-        }
-    }function hideCard7() {
-        document.getElementById('t-7').classList.remove('show-image');
-    }
-// 8
-    function displayCard8() {
-        if(document.getElementById('t-8').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-8').classList.add('show-image');
-            document.getElementById('card-8').classList.remove('card');
-            document.getElementById('card-8').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-8').src);
-        }
-    }function hideCard8() {
-        document.getElementById('t-8').classList.remove('show-image');
-    }
-
-
-    /** 9-12 Functions */
-    function displayCard9() {
-        if(document.getElementById('t-9').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-9').classList.add('show-image');
-            document.getElementById('card-9').classList.remove('card');
-            document.getElementById('card-9').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-9').src);
-        }
-    }function hideCard9() {
-        document.getElementById('t-9').classList.remove('show-image');
-    }
-
-    function displayCard10() {
-        if(document.getElementById('t-10').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-10').classList.add('show-image');
-            document.getElementById('card-10').classList.remove('card');
-            document.getElementById('card-10').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-10').src);
-        }
-    } function hideCard10() {
-        document.getElementById('t-10').classList.remove('show-image');
-    }
-    function displayCard11() {
-        if(document.getElementById('t-11').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-11').classList.add('show-image');
-            document.getElementById('card-11').classList.remove('card');
-            document.getElementById('card-11').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-11').src);
-        }
-    }function hideCard11() {
-        document.getElementById('t-11').classList.remove('show-image');
-    }
-// 12
-    function displayCard12() {
-        if(document.getElementById('t-12').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-12').classList.add('show-image');
-            document.getElementById('card-12').classList.remove('card');
-            document.getElementById('card-12').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-             console.log(document.getElementById('t-12').src);
-        }
-    }function hideCard12() {
-        document.getElementById('t-12').classList.remove('show-image');
-    }
-
-
-    /** 13-16 Functions */
-    function displayCard13() {
-        if(document.getElementById('t-13').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-13').classList.add('show-image');
-            document.getElementById('card-13').classList.remove('card');
-            document.getElementById('card-13').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-             console.log(document.getElementById('t-13').src);
-        }
-    }function hideCard13() {
-        document.getElementById('t-13').classList.remove('show-image');
-    }
-
-    function displayCard14() {
-        if(document.getElementById('t-14').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-14').classList.add('show-image');
-            document.getElementById('card-14').classList.remove('card');
-            document.getElementById('card-14').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-             console.log(document.getElementById('t-14').src);
-        }
-    }function hideCard14() {
-        document.getElementById('t-14').classList.remove('show-image');
-    }
-
-    function displayCard15() {
-        if(document.getElementById('t-15').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-15').classList.add('show-image');
-            document.getElementById('card-15').classList.remove('card');
-            document.getElementById('card-15').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-15').src);
-        }
-    }function hideCard15() {
-        document.getElementById('t-15').classList.remove('show-image');
-    }
-
-    function displayCard16() {
-        if(document.getElementById('t-16').classList.contains('show-image')){
-            console.log('Already-clicked');
-        }else{
-            console.log('clicked');
-            document.getElementById('t-16').classList.add('show-image');
-            document.getElementById('card-16').classList.remove('card');
-            document.getElementById('card-16').classList.add('card-clicked');
-            this.updateCountOfAdditionOfClasses();
-            console.log(document.getElementById('t-16').src);
-        }
-    }function hideCard16() {
-        document.getElementById('t-16').classList.remove('show-image');
-    }
-
-
       /** Measures that Show-image class doesn't limits 2 */
     function updateCountOfAdditionOfClasses() {
         let image = document.getElementsByClassName('toggle-image');
@@ -287,16 +106,19 @@
     function disableOnClick() {
         let cards = document.getElementsByTagName('td');
         for(let i=0;i<cards.length;i++) {
+            document.getElementById('t-'+(i+1)).classList.remove('rotate-image');
+            document.getElementById('t-'+(i+1)).classList.add('rotate-reverse-image');
             document.getElementById('card-'+(i+1)).classList.remove('enable-clicks');
             document.getElementById('card-'+(i+1)).classList.add('disable-clicks');
             document.getElementById('card-'+(i+1)).ondblclick = ''; /** Disabling */
         }
-        console.log(document.getElementsByClassName('card'));
+        console.log(document.getElementById('t-1'));
         console.log('disabled');
     }
     function enableOnClick() {
         let cards = document.getElementsByTagName('td'); /** WHY 'td' because it will all tags, no matter class removeS OR adds => TAG not removes*/
         for(let i=0;i<cards.length;i++) {
+            document.getElementById('t-'+(i+1)).classList.remove('rotate-reverse-image');
             document.getElementById('card-'+(i+1)).classList.remove('disable-clicks');
             document.getElementById('card-'+(i+1)).classList.add('enable-clicks');
         }
@@ -307,12 +129,16 @@
         let cards = document.getElementsByTagName('td');
         for(let i=0;i<cards.length;i++) {
             if(document.getElementsByClassName('card')) {
+                document.getElementById('t-'+(i+1)).classList.remove('rotate-image');
+                document.getElementById('t-'+(i+1)).classList.remove('rotate-reverse-image');
                 document.getElementById('card-'+(i+1)).classList.remove('disable-clicks');
                 document.getElementById('card-'+(i+1)).classList.remove('enable-clicks');
             }else{
                 document.getElementById('card-'+(i+1)).classList.add('card');
             }
         }
+        console.log(document.getElementById('t-1'));
+        console.log('restarted');
     }
     function removeShowImagesClass() {       
         /** 
@@ -364,7 +190,7 @@ function resetclickedFunction() {
     document.getElementById('demo').classList.remove('started-indicate');
     document.getElementById('demo').classList.remove('stopped-indicate');
     document.getElementById('demo').innerHTML = "Let's match some shapes";
-        /** Reset whole games => FUTURE Addition record tme of previous Game played  */
+        /** Reset whole games => FUTURE Addition record tIme of previous Game played  */
     this.resetcards();
 }
 var defaultHTML='';
